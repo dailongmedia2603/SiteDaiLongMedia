@@ -45,6 +45,7 @@ const Index = () => {
               logoSrc="/logocodev.png"
               name="CoDev"
               description="Giải pháp xây dựng phần mềm 'May đo' cho chính doanh nghiệp. Với sứ mệnh giúp cho doanh nghiệp siêu nhỏ với chi phí thấp. Doanh nghiệp không mất quá nhiều chi phí để xây dựng."
+              href="https://codevsoftware.io.vn/"
             />
           </div>
         </div>
