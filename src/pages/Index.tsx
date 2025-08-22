@@ -39,6 +39,7 @@ const Index = () => {
               logoSrc="/logopowerbuzz.png"
               name="Power Buzz"
               description="Giải pháp làm chủ truyền thông Social với hệ thống kênh TikTok (KOC ảo) giúp doanh nghiệp sở hữu riêng hàng loạt KOC cho riêng mình."
+              href="https://powerbuzzagency.com/"
             />
             <BrandCard
               logoSrc="/logocodev.png"
