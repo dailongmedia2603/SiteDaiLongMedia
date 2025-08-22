@@ -21,7 +21,7 @@ const Index = () => {
               className="mx-auto h-24 md:h-32"
             />
           </div>
-          <p className="text-lg md-text-xl text-gray-600 mb-12 animate-fade-in-up">
+          <p className="text-lg md:text-xl text-gray-600 mb-12 animate-fade-in-up">
             CÔNG TY TNHH ĐẠI LONG MEDIA với mục tiêu xây dựng hệ sinh thái dịch vụ toàn diện giúp doanh nghiệp làm chủ truyền thông và số hoá cho doanh nghiệp siêu nhỏ. Giúp doanh nghiệp có sức khoẻ thương hiệu vững mạnh, bán hàng bền vững.
           </p>
         </div>
@@ -37,7 +37,7 @@ const Index = () => {
             <BrandCard
               logoSrc="/logopowerbuzz.png"
               name="Power Buzz"
-              description="Đi đầu trong lĩnh vực sản xuất và tự động hóa, cung cấp sản phẩm chất lượng cao và bền vững."
+              description="Giải pháp làm chủ truyền thông Social với hệ thống kênh TikTok (KOC ảo) giúp doanh nghiệp sở hữu riêng hàng loạt KOC cho riêng mình."
             />
             <BrandCard
               logoSrc="/logocodev.png"
