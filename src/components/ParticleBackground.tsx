@@ -1,24 +1,21 @@
 "use client";
 
-import { useEffect, useMemo, useState, useCallback } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type Container, type ISourceOptions } from "@tsparticles/engine";
+import { useCallback, useMemo } from "react";
+import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import type { Engine, ISourceOptions, Container } from "tsparticles-engine";
 
 const ParticleBackground = () => {
-  const [init, setInit] = useState(false);
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      console.log(container);
+    },
+    []
+  );
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -44,7 +41,7 @@ const ParticleBackground = () => {
             distance: 100,
             duration: 0.4,
           },
-           push: {
+          push: {
             quantity: 4,
           },
         },
@@ -88,21 +85,18 @@ const ParticleBackground = () => {
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
-  if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-        className="absolute top-0 left-0 w-full h-full z-0"
-      />
-    );
-  }
-
-  return null;
+  return (
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={options}
+      className="absolute top-0 left-0 w-full h-full z-0"
+    />
+  );
 };
 
 export default ParticleBackground;

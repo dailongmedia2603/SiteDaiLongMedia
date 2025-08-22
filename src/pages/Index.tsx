@@ -4,8 +4,15 @@ import { Building, Factory, Store } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen w-full bg-gradient-to-b from-[#0a192f] to-[#020c1b] text-white overflow-hidden">
+    <div className="relative min-h-screen w-full text-white overflow-hidden">
+      {/* Background Layers */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a192f] to-[#020c1b] z-[-2]" />
+      <div 
+        className="absolute inset-0 bg-[url('/background.jpg')] bg-bottom bg-no-repeat bg-contain opacity-20 z-[-1]"
+      />
+      
       <ParticleBackground />
+      
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500 mb-4 animate-fade-in-down">
