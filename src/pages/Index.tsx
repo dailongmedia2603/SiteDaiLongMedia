@@ -8,7 +8,7 @@ const Index = () => {
       {/* Background Layers */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a192f] to-[#020c1b] z-[-2]" />
       <div 
-        className="absolute inset-0 bg-[url('/background.jpg')] bg-bottom bg-no-repeat bg-contain opacity-20 z-[-1]"
+        className="absolute inset-0 bg-[url('/background.jpg')] bg-bottom bg-no-repeat bg-cover opacity-20 z-[-1]"
       />
       
       <ParticleBackground />
