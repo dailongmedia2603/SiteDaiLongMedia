@@ -42,7 +42,7 @@ const Index = () => {
             <BrandCard
               logoSrc="/logocodev.png"
               name="CoDev"
-              description="Tập trung vào thị trường bán lẻ và tiêu dùng, mang đến những trải nghiệm mua sắm độc đáo và tiện lợi."
+              description="Giải pháp xây dựng phần mềm 'May đo' cho chính doanh nghiệp. Với sứ mệnh giúp cho doanh nghiệp siêu nhỏ với chi phí thấp. Doanh nghiệp không mất quá nhiều chi phí để xây dựng."
             />
           </div>
         </div>
