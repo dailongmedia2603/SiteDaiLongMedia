@@ -17,7 +17,7 @@ const BrandCard = ({ logoSrc, name, description }: BrandCardProps) => {
             className="max-h-full max-w-full object-contain" 
           />
         </div>
-        <CardTitle className="text-xl font-bold text-blue-700 mb-2">{name}</CardTitle>
+        <CardTitle className="text-xl font-bold text-[#2e3192] mb-2">{name}</CardTitle>
         <CardDescription className="text-gray-600">{description}</CardDescription>
       </CardContent>
     </Card>
