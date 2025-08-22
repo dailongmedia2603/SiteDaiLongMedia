@@ -4,11 +4,12 @@ interface BrandCardProps {
   logoSrc: string;
   name: string;
   description: string;
+  href?: string;
 }
 
-const BrandCard = ({ logoSrc, name, description }: BrandCardProps) => {
-  return (
-    <Card className="bg-white/60 backdrop-blur-sm border-gray-200/80 text-gray-800 transition-all duration-300 hover:border-blue-300 hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+const BrandCard = ({ logoSrc, name, description, href }: BrandCardProps) => {
+  const cardComponent = (
+    <Card className="bg-white/60 backdrop-blur-sm border-gray-200/80 text-gray-800 transition-all duration-300 hover:border-blue-300 hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col h-full">
       <CardContent className="flex flex-col items-center text-center p-6 flex-grow">
         <div className="h-16 w-full flex items-center justify-center mb-4">
           <img 
@@ -22,6 +23,16 @@ const BrandCard = ({ logoSrc, name, description }: BrandCardProps) => {
       </CardContent>
     </Card>
   );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className="block h-full">
+        {cardComponent}
+      </a>
+    );
+  }
+
+  return cardComponent;
 };
 
 export default BrandCard;

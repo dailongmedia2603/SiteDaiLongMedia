@@ -33,6 +33,7 @@ const Index = () => {
               logoSrc="/logovuaSeeding.png"
               name="Vua Seeding"
               description="Giải pháp Seeding giúp bạn truyền thông điều hướng cộng đồng hiệu quả, tăng uy tín cho thương hiệu / sản phẩm bền vững."
+              href="https://vuaseeding.top/"
             />
             <BrandCard
               logoSrc="/logopowerbuzz.png"
