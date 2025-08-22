@@ -1,17 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import ParticleBackground from "@/components/ParticleBackground";
+import BrandCard from "@/components/BrandCard";
+import { Building, Factory, Store } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
-      <MadeWithDyad />
+    <div className="relative min-h-screen w-full bg-gradient-to-b from-[#0a192f] to-[#020c1b] text-white overflow-hidden">
+      <ParticleBackground />
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500 mb-4 animate-fade-in-down">
+            Công ty Cổ phần Sáng Tạo Việt
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 mb-12 animate-fade-in-up">
+            Kiến tạo tương lai, định hình giá trị. Chúng tôi tự hào là ngôi nhà chung của những thương hiệu tiên phong.
+          </p>
+        </div>
+
+        <div className="w-full max-w-6xl mx-auto">
+           <h2 className="text-3xl font-bold text-center mb-8 text-blue-400">Các Thương Hiệu Của Chúng Tôi</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <BrandCard
+              icon={Building}
+              name="Thương Hiệu A"
+              description="Chuyên về các giải pháp công nghệ và phần mềm doanh nghiệp, mang lại hiệu quả tối ưu cho khách hàng."
+            />
+            <BrandCard
+              icon={Factory}
+              name="Thương Hiệu B"
+              description="Đi đầu trong lĩnh vực sản xuất và tự động hóa, cung cấp sản phẩm chất lượng cao và bền vững."
+            />
+            <BrandCard
+              icon={Store}
+              name="Thương Hiệu C"
+              description="Tập trung vào thị trường bán lẻ và tiêu dùng, mang đến những trải nghiệm mua sắm độc đáo và tiện lợi."
+            />
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
