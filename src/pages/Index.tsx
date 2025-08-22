@@ -22,7 +22,7 @@ const Index = () => {
             />
           </div>
           <p className="text-lg md:text-xl text-gray-600 mb-12 animate-fade-in-up">
-            Kiến tạo tương lai, định hình giá trị. Chúng tôi tự hào là ngôi nhà chung của những thương hiệu tiên phong.
+            CÔNG TY TNHH ĐẠI LONG MEDIA với mục tiêu xây dựng hệ sinh thái dịch vụ toàn diện giúp doanh nghiệp làm chủ truyền thông và số hoá cho doanh nghiệp siêu nhỏ. Giúp doanh nghiệp có sức khoẻ thương hiệu vững mạnh, bán hàng bền vững.
           </p>
         </div>
 
