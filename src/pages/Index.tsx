@@ -21,7 +21,7 @@ const Index = () => {
               className="mx-auto h-24 md:h-32"
             />
           </div>
-          <p className="text-lg md:text-xl text-gray-600 mb-12 animate-fade-in-up">
+          <p className="text-lg md-text-xl text-gray-600 mb-12 animate-fade-in-up">
             CÔNG TY TNHH ĐẠI LONG MEDIA với mục tiêu xây dựng hệ sinh thái dịch vụ toàn diện giúp doanh nghiệp làm chủ truyền thông và số hoá cho doanh nghiệp siêu nhỏ. Giúp doanh nghiệp có sức khoẻ thương hiệu vững mạnh, bán hàng bền vững.
           </p>
         </div>
@@ -32,7 +32,7 @@ const Index = () => {
             <BrandCard
               logoSrc="/logovuaSeeding.png"
               name="Vua Seeding"
-              description="Chuyên về các giải pháp công nghệ và phần mềm doanh nghiệp, mang lại hiệu quả tối ưu cho khách hàng."
+              description="Giải pháp Seeding giúp bạn truyền thông điều hướng cộng đồng hiệu quả, tăng uy tín cho thương hiệu / sản phẩm bền vững."
             />
             <BrandCard
               logoSrc="/logopowerbuzz.png"
