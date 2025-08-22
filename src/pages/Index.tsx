@@ -27,7 +27,7 @@ const Index = () => {
         </div>
 
         <div className="w-full max-w-6xl mx-auto">
-           <h2 className="text-3xl font-bold text-center mb-8 text-blue-600">Các Thương Hiệu Của Chúng Tôi</h2>
+           <h2 className="text-3xl font-bold text-center mb-8 text-[#2e3192]">Các Thương Hiệu Của Chúng Tôi</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <BrandCard
               logoSrc="/logovuaSeeding.png"
