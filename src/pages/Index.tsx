@@ -43,7 +43,7 @@ const Index = () => {
             />
             <BrandCard
               logoSrc="/logocodev.png"
-              name="CoDev"
+              name="CoDev Software"
               description="Giải pháp xây dựng phần mềm 'May đo' cho chính doanh nghiệp. Với sứ mệnh giúp cho doanh nghiệp siêu nhỏ với chi phí thấp. Doanh nghiệp không mất quá nhiều chi phí để xây dựng."
               href="https://codevsoftware.io.vn/"
             />
